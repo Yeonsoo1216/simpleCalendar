@@ -1,14 +1,37 @@
 * {
-  box-sizing: borde-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .bg {
+  position: relative;
   width: 100vw;
   height: 100vh;
   color: #fff;
   background: #4B79A1;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+}
+
+.flex {display: flex;} .jcsb {justify-content: space-between;} .aic {align-items: center;}
+.col_flex {display: flex; flex-direction: column;} .jcc {justify-content: center;} .tac {text-align: center;}
+
+
+.main {
+  position: absolute;
+  text-align: center;
+  width: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.hidden-date {
+  visibility: hidden;
 }

@@ -9,28 +9,13 @@
   width: 100vw;
   height: 100vh;
   color: #fff;
-  background: #4B79A1;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+  background: rgb(155,200,255);
+  background: linear-gradient(0deg, rgba(155,200,255,1) 0%, rgba(82,100,255,1) 100%);
 }
 
 .flex {display: flex;} .jcsb {justify-content: space-between;} .aic {align-items: center;}
 .col_flex {display: flex; flex-direction: column;} .jcc {justify-content: center;} .tac {text-align: center;}
 
-.btn {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #fff;
-  color: royalblue;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all .4s;
-}
-
-.btn:hover {
-  background-color: royalblue;
-  color: #fff;
-}
 
 .main {
   position: absolute;
@@ -38,10 +23,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-.current {
-  margin-bottom: 1rem;
 }
 
 .Calendar {
@@ -52,21 +33,19 @@
 
 .hidden-date {
   visibility: hidden;
-  /* background-color: #d1d1d1 !important;
-  color: #d1d1d1 !important; */
 }
 
 .Calendar > div {
-  height: 90px;
-  background-color: #fff;
-  color: #000;
+  color: #2037ff;
+  padding: 1rem 1rem 2rem 1rem;
+  background: rgba( 255, 255, 255, 0.5 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 1px );
+  -webkit-backdrop-filter: blur( 1px );
   border-radius: 10px;
-  padding: 1rem;
 }
 
-.Calendar > div > div {
-  margin-top: .5rem;
-  color: royalblue;
+.day {
+  color: #f5ff00;
   font-weight: 600;
 }
-
